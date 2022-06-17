@@ -1,4 +1,4 @@
-// Type definitions for loopbench 1.2
+// Type definitions for loopbench 2.0
 // Project: https://github.com/mcollina/loopbench#readme
 // Definitions by: BendingBender <https://github.com/BendingBender>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -37,6 +37,11 @@ declare namespace loopbench {
          * The delay in milliseconds (and fractions) from the expected run. It might be negative (in older nodes).
          */
         readonly delay: number;
+
+        /**
+         * The interval at which the eventLoop should be sampled.
+         */
+        readonly sampleInterval: number;
 
         /**
          * The maximum amount of delay that is tolerated before `overLimit` becomes true,
